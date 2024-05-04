@@ -6,7 +6,7 @@ JOBS = [{
     'id': 1,
     'title': 'Data Analyst',
     'location': 'Bengaluru, India',
-    'salary': 'Rs. 10,00,000'
+    'salary': 'Rs. 90,000'
 }, {
     'id': 2,
     'title': 'Data Scientist',
@@ -26,13 +26,13 @@ JOBS = [{
 
 @app.route('/')
 def test():
-  return render_template('home.html', jobs=JOBS, company_name='Jovian')
+    return render_template('home.html', jobs=JOBS, company_name='Jovian')
 
 
 @app.route("/api/jobs")
 def list_jobs():
-  return jsonify(JOBS)
+    return jsonify(JOBS)
 
 
 if __name__ == "__main__":
-  app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', debug=True)
