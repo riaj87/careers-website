@@ -11,14 +11,17 @@
         height: 360px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
       }
     </style>
     <title>Test Careers</title>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id='banner' src='https://5ea2b7c9-531a-4c8b-9128-652a5cb9d3c7-00-xzkrt4b5ifnl.worf.replit.dev/static/banner.jpg' height='320'>
     <div class='container'>
       <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-      <img class="img-fluid" id='banner' src='https://5ea2b7c9-531a-4c8b-9128-652a5cb9d3c7-00-xzkrt4b5ifnl.worf.replit.dev/static/banner.jpg' height='320'>
+
       <h2 class='text-center'>About Test</h2>
       <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -30,10 +33,7 @@
           {% include 'jobitem.html' %}
         {% endfor %}
       </div>
-      <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class='mt-4'>Copyright 2024, Test</p>
-      </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
