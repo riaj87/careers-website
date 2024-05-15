@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-      #banner{
-        height: 360px;
-        width: 100%;
-        object-fit: cover;
-        margin-bottom: 16px;
-      }
-    </style>
+    {% include 'bootstrap.html' %}
+
     <title>Test Careers</title>
   </head>
   <body>
     {% include 'nav.html' %}
-    <img class="img-fluid" id='banner' src='https://5ea2b7c9-531a-4c8b-9128-652a5cb9d3c7-00-xzkrt4b5ifnl.worf.replit.dev/static/banner.jpg' height='320'>
+    {% include 'banner.html' %}
+
     <div class='container'>
-      <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
+      <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
 
       <h2 class='text-center'>About Test</h2>
       <p class="lead">
